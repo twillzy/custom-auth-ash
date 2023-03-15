@@ -4,7 +4,11 @@ Authentication is a crucial part of most web applications. With the [release of 
 
 Specifically, how do we go from this:
 
+![alt text](https://github.com/twillzy/custom-auth-ash/blob/main/assets/from.png)
+
 to this:
+
+![alt text](https://github.com/twillzy/custom-auth-ash/blob/main/assets/to.png)
 
 Before we dive into customisation, let's first have a brief overview of Ash Authentication. Ash Authentication provides features such as registration and sign-in using passwords/OAuth 2.0. Ash Authentication also offers default LiveView components for login, logout, registration, and password reset. These default configurations work well for most applications, but in some cases, they need to be customised.
 
