@@ -37,6 +37,7 @@ defmodule CustomAuth.MixProject do
       {:ecto_sql, "~> 3.6"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.3"},
+      {:phoenix_view, "~> 2.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, "~> 0.18.16"},
       {:heroicons, "~> 0.5"},
@@ -52,8 +53,8 @@ defmodule CustomAuth.MixProject do
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:ash, "~> 2.6"},
-      {:ash_authentication, "~> 3.1"},
-      {:ash_authentication_phoenix, "~> 1.6"},
+      {:ash_authentication, "~> 3.7"},
+      {:ash_authentication_phoenix, "~> 1.4"},
       {:ash_postgres, "~> 1.3"}
     ]
   end

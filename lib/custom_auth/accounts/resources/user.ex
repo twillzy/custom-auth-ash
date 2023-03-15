@@ -7,6 +7,7 @@ defmodule CustomAuth.Accounts.User do
     uuid_primary_key(:id)
     attribute(:email, :ci_string, allow_nil?: false)
     attribute(:hashed_password, :string, allow_nil?: false, sensitive?: true)
+    attribute(:username, :string, allow_nil?: false)
   end
 
   authentication do
@@ -15,6 +16,9 @@ defmodule CustomAuth.Accounts.User do
     strategies do
       password :password do
         identity_field(:email)
+        hashed_password_field(:hashed_password)
+        confirmation_required?(false)
+        register_action_accept([:username])
       end
     end
 
@@ -35,5 +39,6 @@ defmodule CustomAuth.Accounts.User do
 
   identities do
     identity(:unique_email, [:email])
+    identity(:unique_username, [:username])
   end
 end

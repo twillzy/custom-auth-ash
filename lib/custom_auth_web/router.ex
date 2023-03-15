@@ -20,7 +20,8 @@ defmodule CustomAuthWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    sign_in_route()
+    live "/register", AuthLive.Index, :register
+    live "/sign-in", AuthLive.Index, :sign_in
     sign_out_route AuthController
     auth_routes_for CustomAuth.Accounts.User, to: AuthController
     reset_route []
