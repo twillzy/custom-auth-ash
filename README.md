@@ -1,14 +1,14 @@
 # Customising Ash Authentication with Phoenix LiveView
 
-Authentication is a crucial part of most web applications. With the [release of Ash Authentication](https://alembic.com.au/blog/announcing-ash-authentication), we are now able to authenticate users in Elixir applications using simple DSL on Ash resources. Ash Authentication comes with default configurations that work well for most applications. However, in some cases, customisation is necessary to cater to specific business needs. In this blog post, we will discuss how to customise Ash authentication with Phoenix LiveView.
+Authentication is a crucial part of most web applications. With the [release of Ash Authentication](https://alembic.com.au/blog/announcing-ash-authentication), we are now able to authenticate users in Elixir applications using simple DSL on Ash resources. Ash Authentication comes with default configurations that work well for most applications. However, in some cases, customisation is necessary to cater to specific business needs. In this blog post, we will discuss how to customise Ash authentication with Phoenix LiveView which follows the [RealWorld specs](https://realworld-docs.netlify.app/docs/specs/backend-specs/endpoints#registration).
 
 Specifically, how do we go from this:
 
-![alt text](https://github.com/twillzy/custom-auth-ash/blob/main/assets/from.png)
+![alt text](https://github.com/twillzy/custom-auth-ash/blob/main/assets/from.png?raw=true)
 
 to this:
 
-![alt text](https://github.com/twillzy/custom-auth-ash/blob/main/assets/to.png)
+![alt text](https://github.com/twillzy/custom-auth-ash/blob/main/assets/to.png?raw=true)
 
 Before we dive into customisation, let's first have a brief overview of Ash Authentication. Ash Authentication provides features such as registration and sign-in using passwords/OAuth 2.0. Ash Authentication also offers default LiveView components for login, logout, registration, and password reset. These default configurations work well for most applications, but in some cases, they need to be customised.
 
